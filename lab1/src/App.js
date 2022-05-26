@@ -26,7 +26,8 @@ class Data extends React.Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log('shouldComponentUpdate');
-    return nextState.value < 10 ? true : false
+    return true
+    // return nextState.value < 10 ? true : false
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
